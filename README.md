@@ -1,5 +1,7 @@
 # motion-duration
 
+[![Build Status](https://travis-ci.org/OTGApps/motion-duration.svg)](https://travis-ci.org/OTGApps/motion-duration)
+
 Motion::Duration is an immutable type that represents some amount of time with accuracy in seconds.
 
 It was adapted for RubyMotion from [ruby-duration](https://github.com/peleteiro/ruby-duration) by Jose Peleteiro since it required ActiveRecord, iso8601, and i18n.
