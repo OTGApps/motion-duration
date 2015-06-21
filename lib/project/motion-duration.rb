@@ -63,9 +63,27 @@ class Motion
       Duration.new(@total % other.to_i)
     end
 
-    %w(minutes hours days).each do |meth|
-      define_method("total_#{meth}") { @total / MULTIPLES[meth.to_sym] }
+    ####################
+    # if/when Android ever gets define_method, we can restore this logic and dump
+    # the following 3 methods
+    # http://hipbyte.myjetbrains.com/youtrack/issue/RM-806
+    #%w(minutes hours days).each do |meth|
+    #  define_method("total_#{meth}") { @total / MULTIPLES[meth.to_sym] }
+    #end
+
+    def total_minutes
+      @total / MULTIPLES[:minutes]
     end
+
+    def total_hours
+      @total / MULTIPLES[:hours]
+    end
+
+    def total_days
+      @total / MULTIPLES[:days]
+    end
+
+    ####################
 
     # @return true if total is 0
     def blank?
