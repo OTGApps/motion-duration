@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    motion-duration (0.0.1)
+    motion-duration (0.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -14,3 +14,6 @@ PLATFORMS
 DEPENDENCIES
   motion-duration!
   rake
+
+BUNDLED WITH
+   1.10.4
